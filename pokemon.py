@@ -148,7 +148,7 @@ class Trainer:
             new_pokemon = input(f'{new_pokemon} is not amongst your captured pokemons. Please choose again.')
         else:
             self.current_pokemon = new_pokemon
-            print(f'Pokemon swap successful! Your battle partner is now {self.current_pokemon}\nYou have {self.potions} potions left.\n')
+            print(f'Pokemon swap successful! Your battle partner is now {self.current_pokemon.name}\nYou have {self.potions} potions left.\n')
 
         self.potions -= 1
     
@@ -211,5 +211,3 @@ Ash.swap_pokemon(2)
 # print(Ash)
 # print(Misty)
 
-# print(help(Trainer))
-# print(help(Pokemon))
